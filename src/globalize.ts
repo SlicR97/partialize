@@ -1,12 +1,10 @@
 /* eslint-disable no-var */
 // noinspection JSConstantReassignment,ES6ConvertVarToLetConst
 
-import { hello } from './hello'
-
-type HelloType = () => string
+import { partialize as _partialize } from './partialize'
 
 declare global {
-  var hello: HelloType
+  var partialize: typeof _partialize
 }
 
-globalThis.hello = hello
+globalThis.partialize = _partialize
