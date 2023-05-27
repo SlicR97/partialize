@@ -30,3 +30,11 @@ const add = partialize(_add)
 
 const result = add(2)(2) // 4
 ```
+
+## Globalizing
+
+If you want to globalize the `partialize` function, you can do so by adding the following line to your code at the top of your entrypoint:
+
+```typescript
+import '@slicr97/partialize/globalize'
+```
